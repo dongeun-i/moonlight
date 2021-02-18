@@ -1,4 +1,23 @@
 body{
     background-color: #233052;
 }
-@media screen and (min-width: 1280px){}
+a,p,h2{
+    color: white;
+    text-decoration: none;
+}
+@media screen and (min-width: 1280px){
+    header{
+        position: fixed;
+        right: 30px;
+    }
+    header > nav > .mui{
+        display: none;
+    }
+    header nav > ul{
+        width: 20px;        
+    }
+    header nav > ul li:not(:last-of-type){
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}

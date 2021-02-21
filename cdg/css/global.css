@@ -69,24 +69,30 @@ header nav > ul li.active a{
     section.mainArea > h1{
         margin: 50px 0 120px 0;
     }
+    section.mainArea > h1 img{
+        filter: drop-shadow(0 0 3px #d9c755);
+    }
     /* section.mainArea > h1 img{
         box-shadow: 100px 100px 50px 50px #d9c755;
     } */
     section.mainArea h1 div.shadow{
       border: 1px 1px 1px 1px solid #d9c755;
     }
-    /* section.mainArea div.overlay{
-        width: 50%;
+    section.mainArea div.overlay{
+        width: 80%;
         height: 100vh;
-        background: rgba(255, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.1);
         border-radius: 50% ;
-        box-shadow: 0 3px 5px rgba(255, 255, 255, 0.5);
-        -webkit-filter:blur(3px);
-        -moz-filter:blur(3px);
-        -o-filter:blur(3px);
-        -ms-filter:blur(3px);
-        filter:blur(3px);            
-    } */
+        filter:blur(200px);       
+        top: 55%;
+        left: 10%;
+        position: absolute;     
+    }
+    section.mainArea > img{
+        filter: drop-shadow(0 0 3px #fff);
+    }
+    /* main fin */
+
     article.subArea{
         /* background: url(../images/cdg_illust.png) no-repeat;
         height: 100vh; */

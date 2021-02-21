@@ -13,16 +13,19 @@ mark{
     background-color: initial;
     font-family: 'NanumMyeongjo';
     font-weight: initial;
+    display: block;
 }
 article.subArea p:first-of-type,
 article.subArea h3 + p,
-article.subArea ul li p{
+article.subArea ul li p,
+section.slideArea ul li > p{
     font-size: 18px;
     line-height: 36px;
     color: #fff;
     font-family: 'NanumMyeongjo';
 }
-article.subArea h2{
+article.subArea h2,
+section.slideArea ul li > p mark{
     font-size: 24px;
     line-height: 36px;
 }
@@ -31,6 +34,11 @@ article.subArea h3{
     font-family: 'NanumMyeongjo';
     font-weight: 700;
     font-size: 24px;
+}
+section.slideArea ul li h2{
+        font-family: 'NanumMyeongjo';
+        font-weight: 700;
+        font-size: 36px;
 }
 header nav > ul li.active a{
     color: #d9c755;
@@ -90,7 +98,7 @@ header nav > ul li.active a{
         margin: 50px 0 120px 0;
     }
     section.mainArea > h1 img{
-        filter: drop-shadow(0 0 2px #d9c755);
+        filter: drop-shadow(0 0 3px #d9c755);
     }
     /* section.mainArea > h1 img{
         box-shadow: 100px 100px 50px 50px #d9c755;

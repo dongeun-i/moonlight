@@ -54,7 +54,7 @@ section.slideArea ul li a.material-icons{
     
 
     section.slideArea{
-        width: 95vw;
+        width: 99vw;
         height: 100vh;
         overflow: hidden;
         /* box-sizing: border-box; */
@@ -64,6 +64,7 @@ section.slideArea ul li a.material-icons{
     section.slideArea ul{
         text-align: center;
         width: 300vw;
+        position: absolute;
     }
     section.slideArea ul::after{
         content: ''; display: block; clear: both; visibility: hidden;
@@ -170,6 +171,8 @@ section.slideArea ul li a.material-icons{
     section.slideArea ol li.active{
         opacity: 1;
     }
+    /* 슬라이드 영역 레이아웃 구현 끝 js로 position 값 조절하여 슬라이드 구현 예정 left값 0 ~ -200vw*/
+    section
 
 
 }

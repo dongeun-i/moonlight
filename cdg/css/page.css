@@ -1,3 +1,10 @@
+section.slideArea ul li a.material-icons{
+    position: absolute;
+    top:50%
+}
+
+
+
 @media screen and (min-width: 1280px){
         article.subArea{
         height: 100vh;
@@ -43,6 +50,25 @@
     article.subArea ul li:not(:last-of-type){
         margin-bottom: 20px;
     }
+    /* article fin */
     
-    
+
+    section.slideArea ul{
+        text-align: center;
+    }
+    section.slideArea ul li{
+        position: relative;
+    }
+
+    section.slideArea ul li:first-of-type a,
+    section.slideArea ul li:nth-of-type(2) a:first-of-type{
+        right: 10%;
+        font-size: 48px;
+    }
+    section.slideArea ul li:nth-of-type(2) a:last-of-type,
+    section.slideArea ul li:last-of-type a{
+        left: 10%;
+        font-size: 48px;
+    }
+
 }

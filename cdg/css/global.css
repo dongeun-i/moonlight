@@ -7,9 +7,29 @@ a{
 a,p,h2{
     color: white;
 }
-header nav ul li a{
+mark{
+    color: #d9c755;
+    font-style: normal;
+    background-color: initial;
     font-family: 'NanumMyeongjo';
-    font-weight: 400;
+    font-weight: initial;
+}
+article.subArea p:first-of-type,
+article.subArea h3 + p,
+article.subArea ul li p{
+    font-size: 18px;
+    line-height: 36px;
+    color: #fff;
+    font-family: 'NanumMyeongjo';
+}
+article.subArea h2{
+    font-size: 24px;
+    line-height: 36px;
+}
+header nav ul li a,
+article.subArea h3{
+    font-family: 'NanumMyeongjo';
+    font-weight: 700;
     font-size: 24px;
 }
 header nav > ul li.active a{
@@ -70,7 +90,7 @@ header nav > ul li.active a{
         margin: 50px 0 120px 0;
     }
     section.mainArea > h1 img{
-        filter: drop-shadow(0 0 3px #d9c755);
+        filter: drop-shadow(0 0 2px #d9c755);
     }
     /* section.mainArea > h1 img{
         box-shadow: 100px 100px 50px 50px #d9c755;
@@ -93,20 +113,4 @@ header nav > ul li.active a{
     }
     /* main fin */
 
-    article.subArea{
-        /* background: url(../images/cdg_illust.png) no-repeat;
-        height: 100vh; */
-        text-align: center;
-        padding-top: 120px;
-    }
-    article.subArea > img{
-        width: 100%;
-    }
-
-    
-
-    /* header nav > ul li:not(:last-of-type){
-        
-        margin-bottom: 100px;
-    } */
 }

@@ -1,3 +1,48 @@
 @media screen and (min-width: 1280px){
+        article.subArea{
+        height: 100vh;
+        position: relative;
+        padding: 120px;
+    }
+    article.subArea > *:not(ul){
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    article.subArea::after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url('../images/cdg_illust.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        z-index: -1;
+    }
+    /* subArea 배경이미지 생성  */
+    
+    article.subArea h2{
+        width: 40%;
+        margin: 0 auto 50px;
+    }
+    article.subArea h3{
+        color: #fff;
+    }
+    article.subArea h3 + p{
+        margin-bottom: 100px;
+    }
+    article.subArea ul{
+        margin-left: 25%;
+    }
+    article.subArea ul li p{
+        line-height: initial;
+    }
+    article.subArea ul li:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    
     
 }

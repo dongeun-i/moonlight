@@ -15,10 +15,17 @@ mark{
     font-weight: initial;
     display: block;
 }
+section.eventArea ul li > p{
+    font-size: 14px;
+    font-family: 'NanumMyeongjo';
+    line-height: 36px;
+    color: #000;
+}
 article.subArea p:first-of-type,
 article.subArea h3 + p,
 article.subArea ul li p,
-section.slideArea ul li > p{
+section.slideArea ul li > p,
+section.eventArea > p{
     font-size: 18px;
     line-height: 36px;
     color: #fff;
@@ -35,15 +42,20 @@ article.subArea h3{
     font-weight: 700;
     font-size: 24px;
 }
-section.slideArea ul li h2{
-        font-family: 'NanumMyeongjo';
-        font-weight: 700;
-        font-size: 36px;
+section.slideArea ul li h2,
+section.eventArea h2{
+    font-family: 'NanumMyeongjo';
+    font-weight: 700;
+    font-size: 36px;
 }
 header nav > ul li.active a{
     color: #d9c755;
 }
-.stars{
+section.eventArea ul > h2{
+    font-size: 30px;
+    font-family: 700;
+}
+/* .stars{
     transform:perspective(500px);
     transform-style:preserve-3d;
     position:fixed;
@@ -69,10 +81,40 @@ header nav > ul li.active a{
       transform:perspective(500px) rotateZ(20deg) rotateX(-40deg) rotateY(0);
     } 
     100%{
-      transform:perspective(1000px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);
+      transform:perspective(100px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);
     } 
-  }
+  } */
+  
 @media screen and (min-width: 1280px){
+    /* @keyframes rotate{
+        0%{
+          transform:perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(0);
+        } 
+        100%{
+          transform:perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);
+        } 
+    }
+    .stars{
+        transform:perspective(500px);
+        transform-style:preserve-3d;
+        position:absolute;
+        bottom:0;
+        perspective-origin:50% 100%;
+        left:50%;
+        animation:rotate 90s infinite linear;
+      }
+      .star{
+        width:2px;
+        height:2px;
+        background:#F7F7B6;
+        border-radius:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        transform-origin:0 0 -300px;
+        transform:translate3d(0,0,-300px);
+        backface-visibility:hidden;
+      } */
     header{
         position: fixed;
         right: 30px;
@@ -82,7 +124,8 @@ header nav > ul li.active a{
         display: none;
     }
     header nav > ul{
-        width: 20px;        
+        writing-mode: vertical-rl;     
+        display: flex; 
     }
     header nav > ul li{
         height: 20vh;

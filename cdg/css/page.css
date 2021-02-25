@@ -54,7 +54,8 @@ section.slideArea ul li a.material-icons{
     
 
     section.slideArea{
-        width: 99vw;
+        /* width: 99vw; */
+        width: 100%;
         height: 100vh;
         overflow: hidden;
         /* box-sizing: border-box; */
@@ -63,18 +64,19 @@ section.slideArea ul li a.material-icons{
     }
     section.slideArea ul{
         text-align: center;
-        width: 300vw;
+        width: 100%;
         position: absolute;
     }
-    section.slideArea ul::after{
+    /* section.slideArea ul::after{
         content: ''; display: block; clear: both; visibility: hidden;
-    }
+    } */
     section.slideArea ul li{
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         float: left;
         position: relative;
         overflow: hidden;
+        display: block;
     }
     section.slideArea ul li:first-of-type::after{
         content: '';
@@ -86,7 +88,7 @@ section.slideArea ul li a.material-icons{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        width: 100%;
+        width: 100vw;
         height: 100%;
         opacity: 0.4;
         z-index: -1;
@@ -172,7 +174,42 @@ section.slideArea ul li a.material-icons{
         opacity: 1;
     }
     /* 슬라이드 영역 레이아웃 구현 끝 js로 position 값 조절하여 슬라이드 구현 예정 left값 0 ~ -200vw*/
-    section
 
-
+    section.eventArea{
+        position: relative;
+        height: 100vh;
+    }
+    section.eventArea > h2{
+        text-align: center;
+        margin: 50px auto 20px;
+    }
+    section.eventArea > p{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    section.eventArea > img {
+        position: absolute;
+        top: 10%;
+        left: calc(50% - 590px);
+        z-index: -1;
+        /* opacity: 0.2; */
+    }
+    section.eventArea ul{
+        width: 50%;
+        margin: 100px auto 50px;
+        position: relative;
+    }
+    section.eventArea ul > h2{
+        writing-mode: vertical-rl;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        color: #233052;
+    }
+    section.eventArea ul li {
+        margin-left: 35%;
+    }
+    section.eventArea ul :last-child li:last-child{
+        color: #888;
+    }
 }

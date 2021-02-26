@@ -25,7 +25,8 @@ article.subArea p:first-of-type,
 article.subArea h3 + p,
 article.subArea ul li p,
 section.slideArea ul li > p,
-section.eventArea > p{
+section.eventArea > p,
+figure figcaption dl dt{
     font-size: 18px;
     line-height: 36px;
     color: #fff;
@@ -43,7 +44,8 @@ article.subArea h3{
     font-size: 24px;
 }
 section.slideArea ul li h2,
-section.eventArea h2{
+section.eventArea h2,
+figure h2{
     font-family: 'NanumMyeongjo';
     font-weight: 700;
     font-size: 36px;
@@ -55,7 +57,7 @@ section.eventArea ul > h2{
     font-size: 30px;
     font-family: 700;
 }
-/* .stars{
+.stars{
     transform:perspective(500px);
     transform-style:preserve-3d;
     position:fixed;
@@ -81,9 +83,9 @@ section.eventArea ul > h2{
       transform:perspective(500px) rotateZ(20deg) rotateX(-40deg) rotateY(0);
     } 
     100%{
-      transform:perspective(100px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);
+      transform:perspective(1000px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);
     } 
-  } */
+  }
   
 @media screen and (min-width: 1280px){
     /* @keyframes rotate{

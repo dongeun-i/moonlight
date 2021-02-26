@@ -178,6 +178,7 @@ section.slideArea ul li a.material-icons{
     section.eventArea{
         position: relative;
         height: 100vh;
+        margin-bottom: 100px;
     }
     section.eventArea > h2{
         text-align: center;
@@ -187,7 +188,8 @@ section.slideArea ul li a.material-icons{
         text-align: center;
         margin-bottom: 20px;
     }
-    section.eventArea > img {
+    section.eventArea > img,
+    figure > img:first-of-type{
         position: absolute;
         top: 10%;
         left: calc(50% - 590px);
@@ -209,7 +211,35 @@ section.slideArea ul li a.material-icons{
     section.eventArea ul li {
         margin-left: 35%;
     }
-    section.eventArea ul :last-child li:last-child{
+    section.eventArea ul:last-of-type li p:last-of-type{
         color: #888;
+    }
+
+    figure{
+        position: relative;
+    }
+    figure h2{
+        text-align: center;
+        margin-bottom: 20px;
+        display: block;
+    }
+    figure > img:first-of-type{
+        margin-top: 20px;
+    }
+    figure > img:last-of-type{
+        position: absolute;
+        top: 50%;
+        left: 23%;
+    }
+    figure figcaption{
+        width: 50%;
+        margin: 100px auto 50px;
+    }
+    figure figcaption dl{
+        margin-left: 35%;
+    }
+    figure figcaption dl dt{
+        font-weight:700 ;
+        color: #000;
     }
 }

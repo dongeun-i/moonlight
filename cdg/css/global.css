@@ -15,7 +15,9 @@ mark{
     font-weight: initial;
     display: block;
 }
-section.eventArea ul li > p{
+section.eventArea ul li > p,
+figure figcaption dl dd,
+section.ticketArea ul li p{
     font-size: 14px;
     font-family: 'NanumMyeongjo';
     line-height: 36px;
@@ -45,7 +47,8 @@ article.subArea h3{
 }
 section.slideArea ul li h2,
 section.eventArea h2,
-figure h2{
+figure h2,
+section.ticketArea h2{
     font-family: 'NanumMyeongjo';
     font-weight: 700;
     font-size: 36px;
@@ -88,35 +91,6 @@ section.eventArea ul > h2{
   }
   
 @media screen and (min-width: 1280px){
-    /* @keyframes rotate{
-        0%{
-          transform:perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(0);
-        } 
-        100%{
-          transform:perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);
-        } 
-    }
-    .stars{
-        transform:perspective(500px);
-        transform-style:preserve-3d;
-        position:absolute;
-        bottom:0;
-        perspective-origin:50% 100%;
-        left:50%;
-        animation:rotate 90s infinite linear;
-      }
-      .star{
-        width:2px;
-        height:2px;
-        background:#F7F7B6;
-        border-radius:100%;
-        position:absolute;
-        top:0;
-        left:0;
-        transform-origin:0 0 -300px;
-        transform:translate3d(0,0,-300px);
-        backface-visibility:hidden;
-      } */
     header{
         position: fixed;
         right: 30px;
@@ -165,5 +139,12 @@ section.eventArea ul > h2{
         filter: drop-shadow(0 0 3px #fff);
     }
     /* main fin */
+    
+    footer p{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 }

@@ -139,7 +139,15 @@ section.eventArea ul > h2{
         filter: drop-shadow(0 0 3px #fff);
     }
     /* main fin */
-    
+    footer{
+        display: flex;
+    }
+    footer h2{
+        float: left;
+    }
+    footer h2 img{
+        filter: drop-shadow(0 0 2px #fff);
+    }
     footer p{
         margin: 0 auto;
         display: flex;

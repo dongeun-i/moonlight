@@ -22,6 +22,23 @@ $(document).ready(function(){
   //   }
   // })
 
+  $(window).scroll(function(){
+    var menu = $('header nav ul li.m'),
+        target = $('header nav ul li.m').parent(),
+        scltop = $(window).scrollTop(),
+        content = $('.scroll'),
+        i= target.index(),
+        targetTop = target.offset().top;
+    
+    $.each(content, function(idx,item){
+      if(targetTop <= scltop){
+        menu.removeClass('active');
+        menu.eq(idx).addClass('active');
+      }
+    })
+  })
+
+
   var stars=800;
   var $stars=$(".stars");
   var r=800;
@@ -50,5 +67,7 @@ $(document).ready(function(){
       $('section.slideArea ul').css('left', ulleft + liw);
     }
   })
+
+
 
 })

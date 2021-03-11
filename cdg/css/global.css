@@ -39,7 +39,11 @@ section.slideArea ul li > p mark{
     font-size: 24px;
     line-height: 36px;
 }
-header nav ul li a,
+header nav ul li a{
+    font-family: 'NanumMyeongjo';
+    font-weight: 700;
+    font-size: 20px;
+}
 article.subArea h3{
     font-family: 'NanumMyeongjo';
     font-weight: 700;
@@ -101,10 +105,11 @@ section.eventArea ul > h2{
     }
     header nav > ul{
         writing-mode: vertical-rl;     
-        display: flex; 
+        display: flex;
+        height: 100%;
     }
     header nav > ul li{
-        height: 20vh;
+        height: 16.5%;
         /* margin-top: 35px; */
         display: flex;
         align-items: center;
@@ -131,7 +136,7 @@ section.eventArea ul > h2{
     section.mainArea div.overlay{
         width: 80%;
         height: 100vh;
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.15);
         border-radius: 50% ;
         filter:blur(200px);       
         top: 55%;

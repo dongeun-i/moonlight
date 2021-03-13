@@ -99,6 +99,7 @@ section.eventArea ul > h2{
         position: fixed;
         right: 30px;
         top: 0px;
+        z-index: 100;
     }
     header > nav > .mui{
         display: none;
@@ -114,6 +115,11 @@ section.eventArea ul > h2{
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
+    }
+    header nav > ul li a{
+        pointer-events: none;
+        
     }
     header nav ul li.active + a{
         color: #d9c755;

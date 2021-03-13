@@ -67,7 +67,7 @@ section.slideArea ul li span.material-icons{
         text-align: center;
         width: 300vw;
         position: absolute;
-        transition: 0.5s;
+        /* transition: 0.5s; */
     }
     /* section.slideArea ul::after{
         content: ''; display: block; clear: both; visibility: hidden;

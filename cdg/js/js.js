@@ -6,7 +6,7 @@ $(document).scroll(function(){
     var top = $(this).offset().top;
     var id = '#'+$(this).attr('id');
 
-    if(top <= scrollTop){
+    if(top-300 <= scrollTop){
       $('header nav ul li').removeClass('active')
       $('header nav ul li' + id).addClass('active')
     }

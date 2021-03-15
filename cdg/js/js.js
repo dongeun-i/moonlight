@@ -1,6 +1,19 @@
 $(document).ready(function(){
   
+$(document).scroll(function(){
+  $('.scroll').each(function(){
+    var scrollTop = $(document).scrollTop();
+    var top = $(this).offset().top;
+    var id = '#'+$(this).attr('id');
 
+    if(top <= scrollTop){
+      $('header nav ul li').removeClass('active')
+      $('header nav ul li' + id).addClass('active')
+    }
+  })
+  })
+//  ID값 활용 header active 효과 fin
+  
 
   $('header nav ul li').click(function(){
       var content = $('header nav ul li').index(this);

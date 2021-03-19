@@ -183,12 +183,24 @@ section.eventArea ul > h2{
         position: fixed;
         top: 2%;
         right: 3%;
-
     }
     header > nav > label{
         z-index: 200;
     }
-
+    header > nav > label.active span{
+        position: absolute;
+        top: 5%;
+        right: 3%;
+    }
+    header > nav > label.active span:first-of-type{
+        transform: rotateZ(45deg) scale(1.2);
+    }
+    header > nav > label.active span:nth-of-type(2){
+        transform: rotateZ(-45deg) scale(1.2); 
+    }
+    header > nav > label.active span:last-of-type{
+        display: none;
+    }
     header > nav > .mui span{
         display: block;
         height: 3px;
@@ -197,6 +209,7 @@ section.eventArea ul > h2{
         margin-bottom: 4px;
         box-sizing: border-box;
         background-color: #fff;
+        transition: 0.5s;
         /* z-index: 110; */
     }
     header > nav > input{
@@ -210,6 +223,7 @@ section.eventArea ul > h2{
         top: 0;
         right: 0;
         touch-action:none;
+        padding-top: 5%;
     }
     /* header nav > ul::after{
         transition: 0.45s;

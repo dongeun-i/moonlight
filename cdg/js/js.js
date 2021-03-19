@@ -60,5 +60,21 @@ $(document).scroll(function(){
   })
 // 슬라이더 fin//
 
+$('.mui').click(function(){
+  if(!$(this).hasClass('active')){
+    $(this).addClass('active');
+  }else{
+    $(this).removeClass('active')
+  }
+})
+// header mui span 모양변형 fin
+
+$('.mui +ul li').click(function(){
+  if($('input.mui').is(":checked")){
+    $("input[type=checkbox]").prop("checked", false);
+    $('.mui').removeClass('active');
+
+  }
+});
 
 })

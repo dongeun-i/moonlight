@@ -176,21 +176,85 @@ section.eventArea ul > h2{
 @media screen and (min-width: 768px) and (max-width: 1279px){
 
     header{
-        position: fixed;
-        right: 30px;
-        top: 0px;
         z-index: 100;
+        position: relative;
     }
     header > nav > .mui{
+        position: fixed;
+        top: 2%;
+        right: 3%;
+
+    }
+    header > nav > label{
+        z-index: 200;
+    }
+
+    header > nav > .mui span{
+        display: block;
+        height: 3px;
+        width: 20px;
+        border: 1px solid #Fff;
+        margin-bottom: 4px;
+        box-sizing: border-box;
+        background-color: #fff;
+        /* z-index: 110; */
+    }
+    header > nav > input{
         display: none;
     }
-    header nav > ul{
-        writing-mode: vertical-rl;     
-        display: flex;
+    header > nav > input:checked + ul{
+        width: 100%;
+        background-color: #233052;
+        position: fixed;
+        opacity: 0.9;
+        top: 0;
+        right: 0;
+        touch-action:none;
+    }
+    /* header nav > ul::after{
+        transition: 0.45s;
+        content: '';
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #233052;
+        width: 70%;
         height: 100%;
+        opacity: 0.5;
+        z-index: -1;
+
+    }
+    header > nav > input:checked + ul::after{
+        content: '';
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 30%;
+        background-color: #233052;
+        width: 70%;
+        height: 100%;
+        opacity: 0.8;
+        z-index: -1;
+        touch-action:none;
+    } */
+
+    header nav > ul{
+        /* writing-mode: vertical-rl;      */
+        /* display: flex; */
+        height: 100%;
+        transition: 0.5s;
+        overflow: hidden;
+        width: 0;
+        top: 0;
+        right: -30%;
+        position: fixed;
+    }
+    header nav > ul::after{
+        
     }
     header nav > ul li{
-        height: 16.5%;
+        height: 14%;
         /* margin-top: 35px; */
         display: flex;
         align-items: center;

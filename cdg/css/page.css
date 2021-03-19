@@ -366,24 +366,19 @@ article.subArea ul li:not(:last-of-type){
 
 
 section.slideArea{
-    width: 99vw;
-    /* width: 100%; */
+    width: 100%;
     height: 100vh;
     overflow: hidden;
-    /* box-sizing: border-box; */
     margin: 0 auto;
     position: relative;
+    display: block;
     
 }
 section.slideArea ul{
     text-align: center;
     width: 300vw;
     position: absolute;
-    /* transition: 0.5s; */
 }
-/* section.slideArea ul::after{
-    content: ''; display: block; clear: both; visibility: hidden;
-} */
 section.slideArea ul li{
     width: 100vw;
     height: 100vh;
@@ -400,7 +395,6 @@ section.slideArea ul li:first-of-type::after{
     left: 0;
     background-image: url('../images/slide_image_01.png');
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%;
@@ -417,9 +411,7 @@ section.slideArea ul li:nth-of-type(2)::after{
     left: 0;
     background-image: url('../images/slide_image_02.png');
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    /* transform: scale(1.2); */
     width: 100%;
     height: 100%;
     opacity: 0.4;
@@ -434,7 +426,6 @@ section.slideArea ul li:last-of-type::after{
     left: 0;
     background-image: url('../images/slide_image_03.png');
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%;
@@ -490,7 +481,8 @@ section.slideArea ol li:not(:first-of-type){
 section.slideArea ol li.active{
     opacity: 1;
 }
-/* 슬라이드 영역 레이아웃 구현 끝 js로 position 값 조절하여 슬라이드 구현 예정 left값 0 ~ -200vw*/
+
+/* 슬라이드 영역  fin*/
 
 section.eventArea{
     position: relative;
@@ -508,14 +500,13 @@ section.eventArea > p{
 section.eventArea > img{
     position: absolute;
     top: 10%;
-    left: calc(50% - 590px);
     z-index: -1;
     width: 100%;
     /* opacity: 0.2; */
 }
 section.eventArea ul{
-    width: 50%;
-    margin: 100px auto 50px;
+    width: 100%;
+    margin: 35px auto;
     position: relative;
 }
 section.eventArea ul > h2{
@@ -531,6 +522,8 @@ section.eventArea ul li {
 section.eventArea ul:last-of-type li p:last-of-type{
     color: #888;
 }
+
+/* eventArea fin */
 
 figure{
     position: relative;
@@ -619,14 +612,7 @@ section.ticketArea ul{
 section.ticketArea ul li p{
     color: #fff;
 }
-section.ticketArea ul li a{
-    filter: grayscale(1);
-    transition: 0.5s;
-    transition-timing-function: ease-in;
-}
-section.ticketArea ul li a:hover{
-    filter: grayscale(0);
-}
+
 section.ticketArea ul li a:not(:first-of-type){
     margin-left: 50px;
 }

@@ -1,25 +1,28 @@
-body{
+body {
     background-color: #233052;
 }
-a{
+a {
     text-decoration: none;
 }
-a,p,h2,span{
+a,
+p,
+h2,
+span {
     color: white;
 }
-mark{
+mark {
     color: #d9c755;
     font-style: normal;
     background-color: initial;
-    font-family: 'NanumMyeongjo';
+    font-family: "NanumMyeongjo";
     font-weight: initial;
     display: block;
 }
 section.eventArea ul li > p,
 figure figcaption dl dd,
-section.ticketArea ul li p{
+section.ticketArea ul li p {
     font-size: 14px;
-    font-family: 'NanumMyeongjo';
+    font-family: "NanumMyeongjo";
     line-height: 36px;
     color: #000;
 }
@@ -28,88 +31,89 @@ article.subArea h3 + p,
 article.subArea ul li p,
 section.slideArea ul li > p,
 section.eventArea > p,
-figure figcaption dl dt{
+figure figcaption dl dt {
     font-size: 18px;
     line-height: 36px;
     color: #fff;
-    font-family: 'NanumMyeongjo';
+    font-family: "NanumMyeongjo";
 }
 article.subArea h2,
-section.slideArea ul li > p mark{
+section.slideArea ul li > p mark {
     font-size: 24px;
     line-height: 36px;
 }
-header nav ul li a{
-    font-family: 'NanumMyeongjo';
+header nav ul li a {
+    font-family: "NanumMyeongjo";
     font-weight: 700;
     font-size: 20px;
 }
-article.subArea h3{
-    font-family: 'NanumMyeongjo';
+article.subArea h3 {
+    font-family: "NanumMyeongjo";
     font-weight: 700;
     font-size: 24px;
 }
 section.slideArea ul li h2,
 section.eventArea h2,
 figure h2,
-section.ticketArea h2{
-    font-family: 'NanumMyeongjo';
+section.ticketArea h2 {
+    font-family: "NanumMyeongjo";
     font-weight: 700;
     font-size: 36px;
 }
-header nav > ul li.active a{
+header nav > ul li.active a {
     color: #d9c755;
 }
-section.eventArea ul > h2{
+section.eventArea ul > h2 {
     font-size: 30px;
     font-family: 700;
 }
-.stars{
-    transform:perspective(500px);
-    transform-style:preserve-3d;
-    position:fixed;
-    bottom:0;
-    perspective-origin:10% 80%;
-    left:50%;
-    animation:rotate 90s infinite linear;
-  }
-  .star{
-    width:2px;
-    height:2px;
-    background:#fff;
-    border-radius:-100%;
-    position:absolute;
-    top:0;
-    left:0;
-    transform-origin:0 0 -100px;
-    transform:translate3d(0,0,-200px);
-    backface-visibility:hidden;
-  }
-  @keyframes rotate{
-    0%{
-      transform:perspective(500px) rotateZ(20deg) rotateX(-40deg) rotateY(0);
-    } 
-    100%{
-      transform:perspective(1000px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);
-    } 
-  }
-  
-@media screen and (min-width: 1280px){
-    header{
+.stars {
+    transform: perspective(500px);
+    transform-style: preserve-3d;
+    position: fixed;
+    bottom: 0;
+    perspective-origin: 10% 80%;
+    left: 50%;
+    animation: rotate 90s infinite linear;
+}
+.star {
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    border-radius: -100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: 0 0 -100px;
+    transform: translate3d(0, 0, -200px);
+    backface-visibility: hidden;
+}
+@keyframes rotate {
+    0% {
+        transform: perspective(500px) rotateZ(20deg) rotateX(-40deg) rotateY(0);
+    }
+    100% {
+        transform: perspective(1000px) rotateZ(20deg) rotateX(-40deg)
+            rotateY(-360deg);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    header {
         position: fixed;
         right: 30px;
         top: 0px;
         z-index: 100;
     }
-    header > nav > .mui{
+    header > nav > .mui {
         display: none;
     }
-    header nav > ul{
-        writing-mode: vertical-rl;     
+    header nav > ul {
+        writing-mode: vertical-rl;
         display: flex;
         height: 100%;
     }
-    header nav > ul li{
+    header nav > ul li {
         height: 16.5%;
         /* margin-top: 35px; */
         display: flex;
@@ -117,43 +121,42 @@ section.eventArea ul > h2{
         justify-content: center;
         cursor: pointer;
     }
-    header nav > ul li a{
+    header nav > ul li a {
         pointer-events: none;
-        
     }
-    header nav ul li.active + a{
+    header nav ul li.active + a {
         color: #d9c755;
     }
-    section.mainArea{
+    section.mainArea {
         text-align: center;
     }
-    section.mainArea > h1{
+    section.mainArea > h1 {
         margin: 50px 0 120px 0;
     }
-    section.mainArea > h1 img{
+    section.mainArea > h1 img {
         filter: drop-shadow(0 0 3px #d9c755);
     }
     /* section.mainArea > h1 img{
         box-shadow: 100px 100px 50px 50px #d9c755;
     } */
-    section.mainArea h1 div.shadow{
-      border: 1px 1px 1px 1px solid #d9c755;
+    section.mainArea h1 div.shadow {
+        border: 1px 1px 1px 1px solid #d9c755;
     }
-    section.mainArea div.overlay{
+    section.mainArea div.overlay {
         width: 80%;
         height: 100vh;
         background: rgba(255, 255, 255, 0.15);
-        border-radius: 50% ;
-        filter:blur(200px);       
+        border-radius: 50%;
+        filter: blur(200px);
         top: 55%;
         left: 10%;
-        position: absolute;     
+        position: absolute;
     }
-    section.mainArea > img{
+    section.mainArea > img {
         filter: drop-shadow(0 0 3px #fff);
     }
     /* main fin */
-    footer{
+    footer {
         height: 50px;
         display: flex;
         align-items: center;
@@ -171,58 +174,56 @@ section.eventArea ul > h2{
         align-items: center;
         justify-content: center;
     } */
-
 }
-@media screen and (min-width: 768px) and (max-width: 1279px){
-
-    header{
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    header {
         z-index: 100;
         position: relative;
     }
-    header > nav > .mui{
+    header > nav > .mui {
         position: fixed;
         top: 2%;
         right: 3%;
     }
-    header > nav > label{
+    header > nav > label {
         z-index: 200;
     }
-    header > nav > label.active span{
+    header > nav > label.active span {
         position: absolute;
         top: 5%;
         right: 3%;
     }
-    header > nav > label.active span:first-of-type{
+    header > nav > label.active span:first-of-type {
         transform: rotateZ(45deg) scale(1.2);
     }
-    header > nav > label.active span:nth-of-type(2){
-        transform: rotateZ(-45deg) scale(1.2); 
+    header > nav > label.active span:nth-of-type(2) {
+        transform: rotateZ(-45deg) scale(1.2);
     }
-    header > nav > label.active span:last-of-type{
+    header > nav > label.active span:last-of-type {
         display: none;
     }
-    header > nav > .mui span{
+    header > nav > .mui span {
         display: block;
         height: 3px;
         width: 20px;
-        border: 1px solid #Fff;
+        border: 1px solid #fff;
         margin-bottom: 4px;
         box-sizing: border-box;
         background-color: #fff;
         transition: 0.5s;
         /* z-index: 110; */
     }
-    header > nav > input{
+    header > nav > input {
         display: none;
     }
-    header > nav > input:checked + ul{
+    header > nav > input:checked + ul {
         width: 100%;
         background-color: #233052;
         position: fixed;
         opacity: 0.9;
         top: 0;
         right: 0;
-        touch-action:none;
+        touch-action: none;
         padding-top: 5%;
     }
     /* header nav > ul::after{
@@ -253,7 +254,7 @@ section.eventArea ul > h2{
         touch-action:none;
     } */
 
-    header nav > ul{
+    header nav > ul {
         /* writing-mode: vertical-rl;      */
         /* display: flex; */
         height: 100%;
@@ -264,10 +265,10 @@ section.eventArea ul > h2{
         right: -30%;
         position: fixed;
     }
-    header nav > ul::after{
+    /* header nav > ul::after{
         
-    }
-    header nav > ul li{
+    } */
+    header nav > ul li {
         height: 14%;
         /* margin-top: 35px; */
         display: flex;
@@ -275,47 +276,44 @@ section.eventArea ul > h2{
         justify-content: center;
         cursor: pointer;
     }
-    header nav > ul li a{
+    header nav > ul li a {
         pointer-events: none;
-        
     }
-    header nav ul li.active + a{
+    header nav ul li.active + a {
         color: #d9c755;
     }
-    
 
-
-    section.mainArea{
+    section.mainArea {
         text-align: center;
     }
-    section.mainArea > h1{
+    section.mainArea > h1 {
         margin: 50px 0 120px 0;
     }
-    section.mainArea > h1 img{
+    section.mainArea > h1 img {
         filter: drop-shadow(0 0 3px #d9c755);
     }
     /* section.mainArea > h1 img{
         box-shadow: 100px 100px 50px 50px #d9c755;
     } */
-    section.mainArea h1 div.shadow{
-      border: 1px 1px 1px 1px solid #d9c755;
+    section.mainArea h1 div.shadow {
+        border: 1px 1px 1px 1px solid #d9c755;
     }
-    section.mainArea div.overlay{
+    section.mainArea div.overlay {
         width: 80%;
         height: 100vh;
         background: rgba(255, 255, 255, 0.15);
-        border-radius: 50% ;
-        filter:blur(200px);       
+        border-radius: 50%;
+        filter: blur(200px);
         top: 55%;
         left: 10%;
-        position: absolute;     
+        position: absolute;
     }
-    section.mainArea > img{
+    section.mainArea > img {
         filter: drop-shadow(0 0 3px #fff);
         width: 100%;
     }
     /* main fin */
-    footer{
+    footer {
         height: 50px;
         display: flex;
         align-items: center;
@@ -333,8 +331,6 @@ section.eventArea ul > h2{
         align-items: center;
         justify-content: center;
     } */
-
 }
-@media screen and (max-width: 767px){
-    
+@media screen and (max-width: 767px) {
 }
